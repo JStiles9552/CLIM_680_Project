@@ -1,1 +1,3 @@
-For my final project, I will be performing a
+For my final project, I will be performing an analysis on the Northeast United States for the years of 1991-2010. To be specific, the Northeast U.S. will be plotted on the longitudinal ranges of 80W to 60W and latitudinal ranges of 38N to 48N, and this will include the states of Maine, Vermont, New Hampshire, Massachusetts, Connecticut, Rhode Island, New York, New Jersey, Pennsylvania, Delaware, and Maryland. The data variable I will be analyzing is total precipitation, and I will only be focusing on precipitation over land, so any ocean precipitation will be cut out from any plots or trends that I include in my final project.
+
+The main purpose of my project is to discover any changes in precipitation trends over the specified time span. To accomplish this, I plan to create plots that show trends in precipitation for each month of the year through 1991-2010, as this will allow me to 
