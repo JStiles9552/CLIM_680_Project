@@ -4,4 +4,4 @@ My project will make use of the ERA5 Global Reanalysis, which is a data set that
 
 The main purpose of my project is to discover any changes in precipitation trends over the specified time span. To accomplish this, I plan to create plots that show trends in precipitation for each month of the year through 1991-2010, as this will allow me to identify which months show the strongest changes in precipitation trends (if any). In addition, I will include maps for the years that show the strongest negative and positive anomalies of total precipitation, and possibly ones that show total precipitation trends over shorter time spans (1991-1995, 1996-2000, etc.). 
 
-![Average Precipitation](/JStiles9552/CLIM_680_Project/Avg_precip.png)
+![Average Precipitation](/Avg_Precip.png)
