@@ -5,3 +5,7 @@ For my maps that show precipitation data, I have managed to mask out the data th
 This also works with my 12-Month Climatology Plot.
 
 ![Climatology Mask](Climatology_Mask.png)
+
+I have also started to put together some line plots that show total precipitation trends for specific locations within the Northeast U.S. The figure below displays this trend for 43.5 N 74 W.
+
+![ERA5 Plot](ERA5_Plot.png)
