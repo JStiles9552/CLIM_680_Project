@@ -4,7 +4,7 @@ For my project, I will be exploring the total land precipitation trends within t
 
 Data
 
-My project will make use of the ERA5 Global Reanalysis, which is a data set that covers a massive amount of atmospheric and weather data, including precipitation and temperature data, which spans as far back as the mid-1900s (Hersbach et al, 2020). The ERA5 Global Reanalysis was created by the European Center for Medium-Range Weather Forecasts, and is consistently updated with both new and changing atmospheric data (ECMWF, n.d.). Because of the size of this data set, I will only be working with northeast region of the U.S., while focusing on the variable of total precipitation between the years of 1990-2010.
+My project will make use of the ERA5 Global Reanalysis, which is a data set that covers a massive amount of atmospheric and weather data, including precipitation and temperature data, which spans as far back as the mid-1900s (Hersbach et al, 2020). The ERA5 Global Reanalysis was created by the European Center for Medium-Range Weather Forecasts with a resolution of 0.25 Degrees, and is consistently updated with both new and changing atmospheric data (ECMWF, n.d.). Because of the size of this data set, I will only be working with northeast region of the U.S., while focusing on the variable of total precipitation between the years of 1990-2010.
 
 [Project Proposal](https://jstiles9552.github.io/CLIM_680_Project/Project_Proposal.html)
 
