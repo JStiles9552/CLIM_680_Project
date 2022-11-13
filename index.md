@@ -4,17 +4,21 @@ For my project, I will be exploring the total land precipitation trends within t
 
 Data
 
-My project will make use of the ERA5 Global Reanalysis, which is a data set that covers a massive amount of atmospheric and weather data, including precipitation and temperature data, which spans as far back as the mid-1900s (Hersbach et al, 2020). The ERA5 Global Reanalysis was created by the European Center for Medium-Range Weather Forecasts with a resolution of 0.25 Degrees, and is consistently updated with both new and changing atmospheric data (ECMWF, n.d.). Because of the size of this data set, I will only be working with northeast region of the U.S., while focusing on the variable of total precipitation between the years of 1990-2010. I chose the latitude and longitude ranges of -80W - -67.5W and 38N - 48N, which unfortunately contains data within Canada that I needed to mask out within my plots. The precipitation values compiled in my dataset are categorized as m/day, and I changed them to values of mm/day by multiplying the precipitation values by 1000.
+My project will make use of the ERA5 Global Reanalysis, which is a data set that covers a massive amount of atmospheric and weather data, including precipitation and temperature data, which spans as far back as the mid-1900s (Hersbach et al, 2020). The ERA5 Global Reanalysis was created by the European Center for Medium-Range Weather Forecasts with a resolution of 0.25 Degrees, and is consistently updated with both new and changing atmospheric data (ECMWF, n.d.). Because of the size of this data set, I will only be working with northeast region of the U.S., while focusing on the variable of total precipitation (tp) between the years of 1990-2010. I chose the latitude and longitude ranges of -80W - -67.5W and 38N - 48N, which unfortunately contains data within Canada that I needed to mask out within my plots. The precipitation values compiled in my dataset are categorized as m/day, and I changed them to values of mm/day by multiplying the precipitation values by 1000.
 
 Code Description
 
 Masking
 
-Before I began plotting my data onto maps, I needed to mask out the data that was displayed in Canada since this was outside of my study region. To do this, I made use of the "ShapelyFeature" package within cartopy, which allowed me to import a shape for the entire region of Canada. I then applied this feature to all of my maps and assigned it a white color, and this resulted in all of the data within Canada being masked out. Figure 1 shows a sample of this feature applied to the Northeast U.S., where the Northeast U.S. states contain the data and Canada is a blank white color.
+Before I began plotting my data onto maps, I needed to mask out the data that was displayed in Canada since this was outside of my study region. To do this, I made use of the "ShapelyFeature" package within cartopy, which allowed me to import a shape for the entire region of Canada. I then applied this feature to all of my maps and assigned it a white color, and this resulted in all of the data within Canada being masked out. In addition, by using the axes subpackage of the Matplotlib package titled "pyplot," this allowed for the inclusion of a number of other mapping features. These include state and continental borders, as well as oceans and lakes with blacks colors to mask out any data that shows up within these areas. Figure 1 shows a sample of this feature applied to the Northeast U.S., where the Northeast U.S. states contain the data and Canada is a blank white color.
 
 Aggregates
 
 Over the entire time span, the average daily precipitation was around 3.311 mm/day for the entire area of land, with a standard deviation of 1.507. These values were calculated using the mean and standard deviation functions in numpy, and included the total precipitation values over the entire 1990-2010 time span. Figure 1 shows the mean total precipitation spread throughout the entire Northeast U.S., with a color scale of 2.5-4.5 mm/day that includes all the mean values. 
+
+Groupby/Climatologies
+
+In order to show the monthly spread of daily precipitation values, I created a 12-Month climatology plot for the Northeast U.S. This was accomplished by using the groupby function to separate the data by month, and then applying this to the pyplot package in matplotlib to display the monthly data on a 6 column, 2 row plot. 
 
 [Project Proposal](https://jstiles9552.github.io/CLIM_680_Project/Project_Proposal.html)
 
