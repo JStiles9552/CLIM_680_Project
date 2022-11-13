@@ -10,7 +10,7 @@ Code Description
 
 Aggregates
 
-Over the entire time span, the average daily precipitation was around 3.311 mm/day for the entire area of land, with a standard deviation of 1.507. These values were calculated using the mean and standard deviation functions in numpy, and included the 
+Over the entire time span, the average daily precipitation was around 3.311 mm/day for the entire area of land, with a standard deviation of 1.507. These values were calculated using the mean and standard deviation functions in numpy, and included the total precipitation values over the entire 1990-2010 time span. Figure 1 shows the mean total precipitation spread throughout the entire Northeast U.S., with a color scale of 2.5-4.5 mm/day that includes all the mean values. 
 
 [Project Proposal](https://jstiles9552.github.io/CLIM_680_Project/Project_Proposal.html)
 
