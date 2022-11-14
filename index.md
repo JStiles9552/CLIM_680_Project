@@ -16,9 +16,13 @@ Aggregates
 
 Over the entire time span, the average daily precipitation was around 3.311 mm/day for the entire area of land, with a standard deviation of 1.507. These values were calculated using the mean and standard deviation functions in numpy, and included the total precipitation values over the entire 1990-2010 time span. Figure 1 shows the mean total precipitation spread throughout the entire Northeast U.S., with a color scale of 2.5-4.5 mm/day that includes all the mean values. 
 
-Groupby/Climatologies
+Groupby
 
-In order to show the monthly spread of daily precipitation values, I created a 12-Month climatology plot for the Northeast U.S. This was accomplished by using the groupby function to separate the data by month, and then applying this to the pyplot package in matplotlib to display the monthly data on a 6 column, 2 row plot. 
+In order to show the monthly spread of daily precipitation values, I created a 12-Month climatology plot for the Northeast U.S. This was accomplished by using the groupby function to separate the data by month, and then applying this to the pyplot package in matplotlib to display the monthly data on a 6 column, 2 row plot. This allows me to display the monthly changes in daily precipitation values, and also helps to decipher which months show the least and greatest precipitation.
+
+Anomalies
+
+Now that I could determine which areas showed the highest and lowest values of tp, I then calculated and plotted anomalies for these specific areas. The first region I focused on was Washington, D.C., as it showed one of the lowest average precipitation values out of the entire Northeast U.S., and also because it made sense to explore the trends of a nearby area. By selecting the latitude and longitude values of 39N, -77W, this disregarded any data outside of Washington, D.C. and I could then create a line plot of all the tp values between 1990-2010. Figure 3 displays plot over the entire time span and constantly increasing and decreasing tp values. However, this does not display the anomalies, so I created a second array that contained the monthly average tp values for the entire Northeast U.S. and subtracted it from the monthly average tp values for Washington, D.C. I then completed the same process as before to display these anomalies on a line plot, and followed that up by adding both a 1 year and 10 year running mean 
 
 [Project Proposal](https://jstiles9552.github.io/CLIM_680_Project/Project_Proposal.html)
 
