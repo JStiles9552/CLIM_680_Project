@@ -24,6 +24,12 @@ Anomalies
 
 Now that I could determine which areas showed the highest and lowest values of tp, I then calculated and plotted anomalies for these specific areas. The first region I focused on was Washington, D.C., as it showed one of the lowest average precipitation values out of the entire Northeast U.S., and also because it made sense to explore the trends of a nearby area. By selecting the latitude and longitude values of 39N, -77W, this disregarded any data outside of Washington, D.C. and I could then create a line plot of all the tp values between 1990-2010. Figure 3 displays plot over the entire time span and constantly increasing and decreasing tp values. However, this does not display the anomalies, so I created a second array that contained the monthly average tp values for the entire Northeast U.S. and subtracted it from the monthly average tp values for Washington, D.C. I then completed the same process as before to display these anomalies on a line plot, and followed that up by adding both a 1 year and 10 year running mean plot as this was an effective way of showing long term trends. Figure 4 shows these three plots over the entire 1990-2010 time span, with the anomalies becoming weaker (closer to zero) as the running mean increases in length of time.
 
+The next area I chose was the region that showed the highest tp values, which was a section of New York just east of Lake Ontario. For this section, I used the longitude slice of 72W-70W and the latitude slice of 42N-43.5N to account for all of the high tp values in this region. I then completed the same process as with Washington D.C to plot the yearly anomalies along with the 1 year and 10 year running mean plots. Figure 5 displays these plots in the same manner as Figure 4, but shows a large difference in the spread of anomalies due to the higher tp values.
+
+Composite with the North Atlantic Oscillation
+
+
+
 [Project Proposal](https://jstiles9552.github.io/CLIM_680_Project/Project_Proposal.html)
 
 [Project Update](https://jstiles9552.github.io/CLIM_680_Project/Project_Update.html)
