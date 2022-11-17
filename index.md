@@ -14,7 +14,7 @@ Before I began plotting my data onto maps, I needed to mask out the data that wa
 
 Aggregates
 
-Over the entire time span, the average daily precipitation was around 3.311 mm/day for the entire area of land, with a standard deviation of 1.507. These values were calculated using the mean and standard deviation functions in numpy, and included the total precipitation values over the entire 1990-2010 time span. Figure 1 shows the mean total precipitation spread throughout the entire Northeast U.S., with a color scale of 2.5-4.5 mm/day that includes all the mean values. 
+Over the entire time span, the average daily precipitation was around 3.311 mm/day for the entire area of land, with a standard deviation of 1.507. These values were calculated using the mean and standard deviation functions in numpy, and included the total precipitation values over the entire 1990-2010 time span. Figure 1 shows the mean total precipitation spread throughout the entire Northeast U.S., with a color scale of 2.5-4.5 mm/day that includes all the mean values. To account for these different phases, I assigned the values within the NAO climate index to two different arrays, those being "positivenao" and "negativenao." The positivenao array was made up of all values of nao greater than 0.25 and the negativenao array contained all values less than -0.25. The reason I chose thresholds other than zero is because a threshold of zero showed very little correlation in the significance test, so I changed the thresholds to be above or below zero to increase the significance. Also, I grouped both my dataset and the climate index by year for the composite, becasue my dataset is scaled on an abnormal time scale (i.e., dates are classified like 12-31-1989T18:00:00) that would not allow it to match with the index. 
 
 Groupby
 
@@ -27,6 +27,8 @@ Now that I could determine which areas showed the highest and lowest values of t
 The next area I chose was the region that showed the highest tp values, which was a section of New York just east of Lake Ontario. For this section, I used the longitude slice of 72W-70W and the latitude slice of 42N-43.5N to account for all of the high tp values in this region. I then completed the same process as with Washington D.C to plot the yearly anomalies along with the 1 year and 10 year running mean plots. Figure 5 displays these plots in the same manner as Figure 4, but shows a large difference in the spread of anomalies due to the higher tp values.
 
 Composite with the North Atlantic Oscillation
+
+For my composite, I made use of the North Atlantic Oscillation (NAO) climate index with my dataset. I chose this index because the NAO occurs near the Northeast U.S., so I thought it would be interesting to find correlations (if any) between the tp patterns in this region and the changing phases of the NAO. The NAO is made up of two different phases, those being a positive phase and a negative phase. The postive NAO occurs when the far-northern regions of the North Atlantic contain below-average sea-surface heights and pressure levels while the middle regions of the North Atlantic contain above-average sea-surface heights and pressure levels (NOAA, 2022). For the negative NAO occur when the situations in the positive NAO are reversed, with above-average values in the far-northern regions and below-average conditions in the mid-North Atlantic (NOAA, 2022). 
 
 
 
