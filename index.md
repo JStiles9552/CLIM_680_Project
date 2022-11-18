@@ -1,32 +1,32 @@
-Introduction
+## Introduction
 
 For my project, I will be exploring the total land precipitation trends within the Northeast United States through the years of 1990-2010. One of the most concerning aspects of climate change is how it will impact global weather patterns, and this is my main motivation in choosing precipitation as my research variable. My intention is to discover any conclusive changes in the Northeast U.S. on a recent scale, as this is a region with unusual patterns of precipitation compared to the rest of the U.S. This is mainly due to the Lake-Effect snowfall from the Great Lakes, as well as the strong and varied precipitation caused by the cold core cyclones that occur in the winter, known as "Nor'Easters." I also intend to indentify any changes in the precipitation trends for spring and summer, as it is important to include all forms of precipitation in my research since my dataset accounts for all of them.
 
-Data
+## Data
 
 My project will make use of the ERA5 Global Reanalysis, which is a data set that covers a massive amount of atmospheric and weather data, including precipitation and temperature data, which spans as far back as the mid-1900s (Hersbach et al, 2020). The ERA5 Global Reanalysis was created by the European Center for Medium-Range Weather Forecasts with a resolution of 0.25 Degrees, and is consistently updated with both new and changing atmospheric data (ECMWF, n.d.). Because of the size of this data set, I will only be working with northeast region of the U.S., while focusing on the variable of total precipitation (tp) between the years of 1990-2010. I chose the latitude and longitude ranges of -80W - -67.5W and 38N - 48N, which unfortunately contains data within Canada that I needed to mask out within my plots. The precipitation values compiled in my dataset are categorized as m/day, and I changed them to values of mm/day by multiplying the precipitation values by 1000.
 
-Code Description
+## Code Description
 
-Masking
+### Masking
 
 Before I began plotting my data onto maps, I needed to mask out the data that was displayed in Canada since this was outside of my study region. To do this, I made use of the "ShapelyFeature" package within cartopy, which allowed me to import a shape for the entire region of Canada. I then applied this feature to all of my maps and assigned it a white color, and this resulted in all of the data within Canada being masked out. In addition, by using the axes subpackage of the Matplotlib package titled "pyplot," this allowed for the inclusion of a number of other mapping features. These include state and continental borders, as well as oceans and lakes with blacks colors to mask out any data that shows up within these areas. Figure 1 shows a sample of this feature applied to the Northeast U.S., where the Northeast U.S. states contain the data and Canada is a blank white color.
 
-Aggregates
+### Aggregates
 
 Over the entire time span, the average daily precipitation was around 3.311 mm/day for the entire area of land, with a standard deviation of 1.507. These values were calculated using the mean and standard deviation functions in numpy, and included the total precipitation values over the entire 1990-2010 time span. Figure 1 shows the mean total precipitation spread throughout the entire Northeast U.S., with a color scale of 2.5-4.5 mm/day that includes all the mean values. To account for these different phases, I assigned the values within the NAO climate index to two different arrays, those being "positivenao" and "negativenao." The positivenao array was made up of all values of nao greater than 0.25 and the negativenao array contained all values less than -0.25. The reason I chose thresholds other than zero is because a threshold of zero showed very little correlation in the significance test, so I changed the thresholds to be above or below zero to increase the significance. Also, I grouped both my dataset and the climate index by year for the composite, becasue my dataset is scaled on an abnormal time scale (i.e., dates are classified like 12-31-1989T18:00:00) that would not allow it to match with the index. 
 
-Groupby
+### Groupby
 
 In order to show the monthly spread of daily precipitation values, I created a 12-Month climatology plot for the Northeast U.S. This was accomplished by using the groupby function to separate the data by month, and then applying this to the pyplot package in matplotlib to display the monthly data on a 6 column, 2 row plot. This allows me to display the monthly changes in daily precipitation values, and also helps to decipher which months show the least and greatest precipitation.
 
-Anomalies
+### Anomalies
 
 Now that I could determine which areas showed the highest and lowest values of tp, I then calculated and plotted anomalies for these specific areas. The first region I focused on was Washington, D.C., as it showed one of the lowest average precipitation values out of the entire Northeast U.S., and also because it made sense to explore the trends of a nearby area. By selecting the latitude and longitude values of 39N, -77W, this disregarded any data outside of Washington, D.C. and I could then create a line plot of all the tp values between 1990-2010. Figure 3 displays plot over the entire time span and constantly increasing and decreasing tp values. However, this does not display the anomalies, so I created a second array that contained the monthly average tp values for the entire Northeast U.S. and subtracted it from the monthly average tp values for Washington, D.C. I then completed the same process as before to display these anomalies on a line plot, and followed that up by adding both a 1 year and 10 year running mean plot as this was an effective way of showing long term trends. Figure 4 shows these three plots over the entire 1990-2010 time span, with the anomalies becoming weaker (closer to zero) as the running mean increases in length of time.
 
 The next area I chose was the region that showed the highest tp values, which was a section of New York just east of Lake Ontario. For this section, I used the longitude slice of 72W-70W and the latitude slice of 42N-43.5N to account for all of the high tp values in this region. I then completed the same process as with Washington D.C to plot the yearly anomalies along with the 1 year and 10 year running mean plots. Figure 5 displays these plots in the same manner as Figure 4, but shows a large difference in the spread of anomalies due to the higher tp values.
 
-Composite with the North Atlantic Oscillation
+### Composite with the North Atlantic Oscillation
 
 For my composite, I made use of the North Atlantic Oscillation (NAO) climate index with my dataset. I chose this index because the NAO occurs near the Northeast U.S., so I thought it would be interesting to find correlations (if any) between the tp patterns in this region and the changing phases of the NAO. The NAO is made up of two different phases, those being a positive phase and a negative phase. The postive NAO occurs when the far-northern regions of the North Atlantic contain below-average sea-surface heights and pressure levels while the middle regions of the North Atlantic contain above-average sea-surface heights and pressure levels (NOAA, 2022). For the negative NAO occur when the situations in the positive NAO are reversed, with above-average values in the far-northern regions and below-average conditions in the mid-North Atlantic (NOAA, 2022). 
 
