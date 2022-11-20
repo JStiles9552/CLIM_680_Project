@@ -40,8 +40,11 @@ The python function I created
 
 ### Linear Regression
 
+To compute my Linear Regression, I used the same NAO climate index as the one in my composite. I also continued the process of grouping the index by season and only selecting the cold months (DJF), and then completed the same grouping process for my dataset. Following this, I was able to compute the anomalies by year that I would use within the regression model.
 
+## Results
 
+To begin the results analysis, I will cover the major aggregates. The standard deviation value of 1.5 is rather high, which indicates that there is a large variation in daily precipiation values throughout the Northeast U.S. In terms of the year-by-year line plot of average tp values, the only noticeable trend is a steep decrease in average precipitation between the late 1990s to early 2000s. Other than that, the trend is rather uniform around 3.2-3.4 mm/day without any long term increases or decreases in the trend. Finally, the total average tp contour plot shows that the areas of Upstate New York saw the highest average daily precipitation, while locations around Washington, D.C. and Maryland experienced the lowest average precipitation.
 
 
 [Project Proposal](https://jstiles9552.github.io/CLIM_680_Project/Project_Proposal.html)
