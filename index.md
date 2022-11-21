@@ -38,7 +38,7 @@ To complete the composite, I made sure to slice positvenao, neutralnao, and nega
 
 ### Python Function
 
-The python function I created 
+The python function I created was a simplified method of calculating mean tp values on different time intervals. The function was defined as mean_lat_lon_year, and it depended on the variables of latitude and longitude. Within the function definition, I grouped my dataset by mean tp values based on year, and then used this grouped dataset to specify that the function is selecting mean tp values at a certain location of latitude (x) and longitude (y). Based on this, I could then return any array of mean tp values by year at any location within the Northeast U.S., which is very helpful in quickly calculating these values. In addition, I created a similar function that would return mean values in a monthly array, which works in the same way as the previous function.
 
 ### Linear Regression
 
