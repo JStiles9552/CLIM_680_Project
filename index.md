@@ -42,7 +42,7 @@ The python function I created was a simplified method of calculating mean tp val
 
 ### Linear Regression
 
-To compute my Linear Regression, I used the same NAO climate index as the one in my composite. I also continued the process of grouping the index by season and only selecting the cold months (DJF), and then completed the same grouping process for my dataset. Following this, I was able to compute the anomalies by year that I would use within the regression model.
+To compute my Linear Regression, I used the same NAO climate index as the one in my composite. I also continued the process of grouping the index by season and only selecting the cold months (DJF), and then completed the same grouping process for my dataset. Following this, I was able to compute the anomalies by year that I would use within the regression model. When I computed the regression, I assigned the DJF climate index to the independent variable and the DJF dataset to the dependent variable, and then calculated the regression coefficient at every location within the latitude and longitude range. Finally, I plotted the regression coefficient spread throughout the Northeast U.S., as seen in Figure 7.
 
 ## Results
 
