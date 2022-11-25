@@ -40,7 +40,7 @@ To complete the composite, I made sure to slice positvenao, neutralnao, and nega
 
 The python function I created was a simplified method of calculating mean tp values on different time intervals. The function was defined as mean_lat_lon_year, and it depended on the variables of latitude and longitude. Within the function definition, I grouped my dataset by mean tp values based on year, and then used this grouped dataset to specify that the function is selecting mean tp values at a certain location of latitude (x) and longitude (y). Based on this, I could then return any array of mean tp values by year at any location within the Northeast U.S., which is very helpful in quickly calculating these values. In addition, I created a similar function that would return mean values in a monthly array, which works in the same way as the previous function.
 
-### Linear Regression
+### [Linear Regression](https://github.com/JStiles9552/CLIM_680_Project/blob/87560e24068c3f4bc6b16cd7c210210eceaf7b9b/NAO_Linear_Regression.ipynb)
 
 To compute my Linear Regression, I used the same NAO climate index as the one in my composite. I also continued the process of grouping the index by season and only selecting the cold months (DJF), and then completed the same grouping process for my dataset. Following this, I was able to compute the anomalies by year that I would use within the regression model. When I computed the regression, I assigned the DJF climate index to the independent variable and the DJF dataset to the dependent variable, and then calculated the regression coefficient at every location within the latitude and longitude range. Finally, I plotted the regression coefficient spread throughout the Northeast U.S., as seen in Figure 7.
 
