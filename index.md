@@ -8,7 +8,7 @@ My project will make use of the ERA5 Global Reanalysis, which is a data set that
 
 ## Code Description
 
-### Masking
+### [Masking](https://https://jstiles9552.github.io/CLIM_680_Project/Sample_Masking.html)
 
 Before I began plotting my data onto maps, I needed to mask out the data that was displayed in Canada since this was outside of my study region. To do this, I made use of the "ShapelyFeature" package within cartopy, which allowed me to import a shape for the entire region of Canada. I then applied this feature to all of my maps and assigned it a white color, and this resulted in all of the data within Canada being masked out. In addition, by using the axes subpackage of the Matplotlib package titled "pyplot," this allowed for the inclusion of a number of other mapping features. These include state and continental borders, as well as oceans and lakes with blacks colors to mask out any data that shows up within these areas. Figure 1 shows a sample of this feature applied to the Northeast U.S., where the Northeast U.S. states contain the data and Canada is a blank white color.
 
