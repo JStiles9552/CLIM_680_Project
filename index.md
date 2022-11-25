@@ -16,7 +16,7 @@ Before I began plotting my data onto maps, I needed to mask out the data that wa
 
 Over the entire time span, the average daily precipitation was around 3.32 mm/day for the entire area of land, with a standard deviation of around 0.68. These values were calculated using the mean and standard deviation functions in numpy, and included the total precipitation values over the entire 1990-2010 time span. I also calculated the mean values of daily precipitation throughout the entire Northeast U.S. for each year between 1990-2010, as this was an effective method of quickly discovering any trends throughout this time span. Figure 1 displays a simple line plot trend of these mean values. Another effective method of calculating aggregates was to create a contour plot of the average daily precipitation values thorugh the entire time span. Figure 2 shows the mean total precipitation spread throughout the entire Northeast U.S., with a color scale of 2.5-4.5 mm/day that includes all the mean values.
 
-### Groupby
+### [Groupby](https://github.com/JStiles9552/CLIM_680_Project/blob/34a631aca9839ba6185632da966e098612d61e89/Groupby.ipynb)
 
 In order to show the monthly spread of daily precipitation values, I created a 12-Month climatology plot for the Northeast U.S. This was accomplished by using the groupby function to separate the data by month, and then applying this to the pyplot package in matplotlib to display the monthly data on a 6 column, 2 row plot. This allows me to display the monthly changes in daily precipitation values, and also helps to decipher which months show the least and greatest precipitation. Figure 2 displays this 12-Month Climatology plot, with the daily precipitation value spread changing radically with each month.
 
