@@ -60,7 +60,16 @@ Figure 7: Daily Precipitation Anomalies by month for Washington D.C. between 199
 
 The next area I chose was the region that showed the highest tp values, which was a section of New York just east of Lake Ontario. For this section, I used the longitude value of 75.5W and the latitude value of 43.5N to give an approximation for all of the high tp values in this region. I then completed the same process as with Washington D.C to plot the yearly anomalies along with the 1 year and 10 year running mean plots. Figure 8 displays these plots in the same manner as Figure 7, but shows a large difference in the spread of anomalies due to the higher tp values.
 
+![Upstate_New_York_Anomalies](Upstate_Anomaly_Trend.png)
+
+Figure 8: Daily Precipitation Anomalies by month for Upstate New York between 1990-2010
+
 The final area I chose was Boston (MA), with the main motivation being that it is located further north and close to the Atlantic Ocean. I used the latitude and longitude values of 42.5N and 71W, and once again applied them to the same code as in the previous anomalies. Figure 9 displays how the anomalies for Boston were observed, as well as how they compare to the two previous situations.
+
+![Boston_Anomalies](Boston_Anomaly_Trend.png)
+
+Figure 9: Daily Precipitation Anomalies by month for Boston between 1990-2010
+
 
 ### [Composite with the North Atlantic Oscillation](https://github.com/JStiles9552/CLIM_680_Project/blob/c1b90e3674b86b86a494164981682ebbac290a8e/NAO_Composite.ipynb)
 
