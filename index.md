@@ -33,7 +33,11 @@ Figure 3: Average Daily Precipitation for the Northeast U.S. between 1990-2010
 
 ### [Groupby](https://github.com/JStiles9552/CLIM_680_Project/blob/34a631aca9839ba6185632da966e098612d61e89/Groupby.ipynb)
 
-In order to show the monthly spread of daily precipitation values, I created a 12-Month climatology plot for the Northeast U.S. This was accomplished by using the groupby function to separate the data by month, and then applying this to the pyplot package in matplotlib to display the monthly data on a 6 column, 2 row plot. This allows me to display the monthly changes in daily precipitation values, and also helps to decipher which months show the least and greatest precipitation. Figure 2 displays this 12-Month Climatology plot, with the daily precipitation value spread changing radically with each month.
+In order to show the monthly spread of daily precipitation values, I created a 12-Month climatology plot for the Northeast U.S. This was accomplished by using the groupby function to separate the data by month, and then applying this to the pyplot package in matplotlib to display the monthly data on a 6 column, 2 row plot. This allows me to display the monthly changes in daily precipitation values, and also helps to decipher which months show the least and greatest precipitation. Figure 4 displays this 12-Month Climatology plot, with the daily precipitation value spread changing radically with each month.
+
+![Monthly_Groupby](Climatology_Mask.png)
+
+Figure 4: 12-Month Climatology for the Northeast U.S.
 
 I also completed a Seasonal Climatology plot for the Northeast U.S. to show the seasonal change in average tp values. The cold months of December, January, and February (DJF) in particular would be useful later on with my composite, so it made sense to show an initial plot of the precipitation during this season. I completed this by using groupby to separate the data by season, and then using the same process as before to display the data in a 2 column, 2 row plot. Figure 3 shows this seasonal plot, as well as how the daily precipitation in the Northeast U.S. was affected by the seasonal change.
 
