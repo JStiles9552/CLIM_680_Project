@@ -39,7 +39,12 @@ In order to show the monthly spread of daily precipitation values, I created a 1
 
 Figure 4: 12-Month Climatology for the Northeast U.S.
 
-I also completed a Seasonal Climatology plot for the Northeast U.S. to show the seasonal change in average tp values. The cold months of December, January, and February (DJF) in particular would be useful later on with my composite, so it made sense to show an initial plot of the precipitation during this season. I completed this by using groupby to separate the data by season, and then using the same process as before to display the data in a 2 column, 2 row plot. Figure 3 shows this seasonal plot, as well as how the daily precipitation in the Northeast U.S. was affected by the seasonal change.
+I also completed a Seasonal Climatology plot for the Northeast U.S. to show the seasonal change in average tp values. The cold months of December, January, and February (DJF) in particular would be useful later on with my composite, so it made sense to show an initial plot of the precipitation during this season. I completed this by using groupby to separate the data by season, and then using the same process as before to display the data in a 2 column, 2 row plot. Figure 5 shows this seasonal plot, as well as how the daily precipitation in the Northeast U.S. was affected by the seasonal change.
+
+![Seasonal_Groupby](Seasonal_Climatology.png)
+
+Figure 5: Seasonal Climatology for the Northeast U.S.
+
 
 ### [Anomalies](https://github.com/JStiles9552/CLIM_680_Project/blob/5ecfb0b51b3fd2cf96afcb55011a1dad6c58537b/Anomalies.ipynb)
 
