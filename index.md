@@ -77,7 +77,7 @@ To account for the different phases of the NAO, I decided to focus on the extrem
 
 To complete the composite, I made sure to slice positvenao, neutralnao, and negativenao arrays so they were on the same year scale (1990-2010) as my dataset. I then matched the anomalies of my dataset with the respective phase of the NAO, and finished by plotting each of these respective arrays within the Northeast U.S. with the same mapping features I used in the previous plots. Figure 6 displays the plots of all three NAO phases paired with the anomaly values, with the anomalies changing radically between each plot.
 
-### Python Function
+### [Python Function](https://github.com/JStiles9552/CLIM_680_Project/blob/7dd4284373bc9d3cfcba29a1b4edc7c613bdd57f/Python_Function.ipynb)
 
 The python function I created was a simplified method of calculating mean tp values on different time intervals. The function was defined as mean_lat_lon_year, and it depended on the variables of latitude and longitude. Within the function definition, I grouped my dataset by mean tp values based on year, and then used this grouped dataset to specify that the function is selecting mean tp values at a certain location of latitude (x) and longitude (y). Based on this, I could then return any array of mean tp values by year at any location within the Northeast U.S., which is very helpful in quickly calculating these values. In addition, I created a similar function that would return mean values in a monthly array, which works in the same way as the previous function.
 
