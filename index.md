@@ -16,6 +16,7 @@ Before I began plotting my data onto maps, I needed to mask out the data that wa
 
 Figure 1: A sample of the mask created to disregard the data in Canada
 
+
 ### [Aggregates](https://github.com/JStiles9552/CLIM_680_Project/blob/9c1679d76a9cd58046eefff4859a4a8beefb7271/Aggregates.ipynb)
 
 Over the entire time span, the average daily precipitation was around 3.32 mm/day for the entire area of land, with a standard deviation of around 0.68. These values were calculated using the mean and standard deviation functions in numpy, and included the total precipitation values over the entire 1990-2010 time span. I also calculated the mean values of daily precipitation throughout the entire Northeast U.S. for each year between 1990-2010, as this was an effective method of quickly discovering any trends throughout this time span. Figure 2 displays a simple line plot trend of these mean values. Another effective method of calculating aggregates was to create a contour plot of the average daily precipitation values thorugh the entire time span. Figure 3 shows the mean total precipitation spread throughout the entire Northeast U.S., with a color scale of 2.5-4.5 mm/day that includes all the mean values.
@@ -24,8 +25,11 @@ Over the entire time span, the average daily precipitation was around 3.32 mm/da
 
 Figure 2: The average trend of daily precipitation for the entire Northeast U.S. between 1990-2010
 
-![ERA5 Mask](ERA5_Mask.png)
+
+![Aggregate_Precipitation_Plot](Aggregate_Precip_Map.png)
+
 Figure 3: Average Daily Precipitation for the Northeast U.S. between 1990-2010
+
 
 ### [Groupby](https://github.com/JStiles9552/CLIM_680_Project/blob/34a631aca9839ba6185632da966e098612d61e89/Groupby.ipynb)
 
