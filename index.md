@@ -123,6 +123,10 @@ The calculated linear regression shows a weak regression coefficient throughout 
 
 This project gave me a strong insight into the year by year trends of precipitation in the Northeast U.S. I discovered that winter is the season where this region experiences its least amount of precipitation, even with the heavy snowfall trends that often categorize it. I also learned that the extreme NAO events have a significant impact on precipitation trends within this region, but the less extreme events failed to show a strong (if any) correlation with these trends. While I was able to find evidence of changing precipitation patterns in areas such as Boston, there was not enough evidence to support any conclusions about changing trends over the entire (or even most of the) Northeast U.S. This was the main challenge of this project, as it was impossible to calculate anomalies and year by year trends in daily precipitation for every part of this region. In addition, the linear regression model showed an insignificant result for nearly the entire region even after confining the analysis to the cold months, which indicates that a further analysis of the regression model is necessary going forward. Even though the results are not conclusive enough to show any major changes in total precipitation trends throughout the Northeast U.S., they do provide a good insight into the yearly and seasonal trends, as well as the regional impact of the strong North Atlantic Oscillation events.
 
+## Conda Environment
+
+/home/jstiles4/clim_data3.yml
+
 ## References
 
 Hersbach, H, Bell, B, Berrisford, P, et al. (2020). The ERA5 Global Reanalysis. Q J R Meteorol Soc. 2020; 146: 1999– 2049. https://doi.org/10.1002/qj.3803
