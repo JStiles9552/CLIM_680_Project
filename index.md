@@ -137,6 +137,8 @@ ECMWF. (n.d.). ERA5. https://www.ecmwf.int/en/forecasts/datasets/reanalysis-data
 Climate Data Store. (2022). ERA5 Monthly Averaged Data on Single Levels from 1959 to Present. ECMWF & Copernicus Climate Change Service. 
   https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=overview
 
+NOAA. (2022). North Atlantic Oscillation (NAO). National Centers for Environmental Information. https://www.ncei.noaa.gov/access/monitoring/nao/
+
 Hurrell, J.W., Ottersen, G., Kushnir, Y., et al. (2003). An Overview of the North Atlantic Oscillation. AGU.  https://www.researchgate.net/publication/304578504_An_overview_of_the_North_Atlantic_Oscillation
 
 [Project Proposal](https://jstiles9552.github.io/CLIM_680_Project/Project_Proposal.html)
